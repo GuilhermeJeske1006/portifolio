@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfólio - Guilherme Jeske</title>
-  <meta content="" name="description">
+  <title>Horarius - Portfólio Guilherme Jeske</title>
+  <meta content="O Horarius é um sistema de controle de horas trabalhadas. Os funcionários registram o ponto por local de trabalho, e o gestor acompanha as horas de cada pe" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -36,17 +36,18 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/perfil.jpg" alt="Foto de Guilherme Jeske" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Guilherme H Jeske</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/guilherme.jeske.1" class="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/jeskeguilherme/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/guilherme-jeske-1b54bb198/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/GuilhermeJeske1006" class="github" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="bx bxl-github"></i></a>
 
-        </div>
-      </div>
+        <div class="profile">
+            <img src="assets/img/perfil.jpg" alt="Foto de Guilherme Jeske" class="img-fluid rounded-circle">
+            <h1 class="text-light"><a href="index.html">Guilherme H Jeske</a></h1>
+            <div class="social-links mt-3 text-center">
+              <a href="https://www.facebook.com/guilherme.jeske.1" class="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/jeskeguilherme/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/guilherme-jeske-1b54bb198/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/GuilhermeJeske1006" class="github" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="bx bxl-github"></i></a>
+    
+            </div>
+          </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
@@ -68,7 +69,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>upload de imagem com php</h2>
+          <h2>Horarius</h2>
 
         </div>
 
@@ -85,12 +86,15 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
-                <div>
-                  <img src="assets/img/upload.png" alt="">
+                <div class="swiper-slide">
+                  <img src="assets/img/horarius.jpg" alt="Horarius - imagem 1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/horarius-login.jpg" alt="Horarius - imagem 2">
                 </div>
 
-
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
 
@@ -98,15 +102,24 @@
             <div class="portfolio-info">
               <h3>Informações do projeto</h3>
               <ul>
-                <li><strong>Tecnologia</strong>: PHP</li>
-
+                <li><strong>Categoria</strong>: Sistema web</li>
+                <li><strong>Tecnologia</strong>: Laravel 12, Livewire 4, Flux UI, Fortify, Filas (Jobs), API Nuvem Fiscal, DomPDF</li>
+                <li><strong>Data do projeto</strong>: 2026</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Descrição do projeto</h2>
-              <p>
-               Esse é um projeto bem simples feito em PHP puro que consiste em fazer o upload de uma imagem, guardar ela em uma pasta dentro dos arquivos e depois lista-la em outra pagina.
-              </p>
+              <p>O Horarius é um sistema de controle de horas trabalhadas. Os funcionários registram o ponto por local de trabalho, e o gestor acompanha as horas de cada pessoa.</p>
+              <p>A partir das horas lançadas, o sistema emite a nota fiscal de serviço (NFS-e) automaticamente pela API da Nuvem Fiscal, facilitando o fechamento e o pagamento de prestadores de serviço.</p>
+              <h4>Principais funcionalidades</h4>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> Registro de ponto pelo próprio funcionário ("Meu ponto")</li>
+                <li><i class="bi bi-check2-circle"></i> Cadastro de locais de trabalho e funcionários</li>
+                <li><i class="bi bi-check2-circle"></i> Lançamento e edição de registros de horas</li>
+                <li><i class="bi bi-check2-circle"></i> Emissão de NFS-e integrada à Nuvem Fiscal, com consulta de status em fila</li>
+                <li><i class="bi bi-check2-circle"></i> Visualização da nota fiscal em PDF</li>
+                <li><i class="bi bi-check2-circle"></i> Autenticação com Fortify e 2FA</li>
+              </ul>
             </div>
           </div>
 

@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfólio - Guilherme Jeske</title>
-  <meta content="" name="description">
+  <title>KitchenEye - Portfólio Guilherme Jeske</title>
+  <meta content="O KitchenEye é um sistema para restaurantes, voltado ao mercado de Portugal, que usa câmeras e inteligência artificial para controlar o estoque d" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -36,17 +36,18 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/perfil.jpg" alt="Foto de Guilherme Jeske" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Guilherme H Jeske</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/guilherme.jeske.1" class="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/jeskeguilherme/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/guilherme-jeske-1b54bb198/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/GuilhermeJeske1006" class="github" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="bx bxl-github"></i></a>
 
-        </div>
-      </div>
+        <div class="profile">
+            <img src="assets/img/perfil.jpg" alt="Foto de Guilherme Jeske" class="img-fluid rounded-circle">
+            <h1 class="text-light"><a href="index.html">Guilherme H Jeske</a></h1>
+            <div class="social-links mt-3 text-center">
+              <a href="https://www.facebook.com/guilherme.jeske.1" class="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/jeskeguilherme/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/guilherme-jeske-1b54bb198/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/GuilhermeJeske1006" class="github" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="bx bxl-github"></i></a>
+    
+            </div>
+          </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
@@ -68,7 +69,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>upload de imagem com php</h2>
+          <h2>KitchenEye</h2>
 
         </div>
 
@@ -85,10 +86,9 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
-                <div>
-                  <img src="assets/img/upload.png" alt="">
+                <div class="swiper-slide">
+                  <img src="assets/img/kitcheneye.jpg" alt="KitchenEye - imagem 1">
                 </div>
-
 
               </div>
             </div>
@@ -98,15 +98,25 @@
             <div class="portfolio-info">
               <h3>Informações do projeto</h3>
               <ul>
-                <li><strong>Tecnologia</strong>: PHP</li>
-
+                <li><strong>Categoria</strong>: SaaS / Visão computacional</li>
+                <li><strong>Tecnologia</strong>: Python, FastAPI, YOLOv8, asyncpg, PostgreSQL (Supabase), Next.js 14, React Query, PyInstaller, Railway</li>
+                <li><strong>Data do projeto</strong>: 2026</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Descrição do projeto</h2>
-              <p>
-               Esse é um projeto bem simples feito em PHP puro que consiste em fazer o upload de uma imagem, guardar ela em uma pasta dentro dos arquivos e depois lista-la em outra pagina.
-              </p>
+              <p>O KitchenEye é um sistema para restaurantes, voltado ao mercado de Portugal, que usa câmeras e inteligência artificial para controlar o estoque da cozinha.</p>
+              <p>As imagens das câmeras passam por um modelo de visão computacional (YOLO) que reconhece os ingredientes usados e dá baixa automaticamente no estoque, gerando alertas quando algo está acabando. Também desenvolvi um agente desktop instalável (Windows, macOS e Linux) que captura as câmeras IP do restaurante via RTSP e envia os frames para a nuvem.</p>
+              <h4>Principais funcionalidades</h4>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> Reconhecimento de ingredientes com YOLOv8</li>
+                <li><i class="bi bi-check2-circle"></i> Baixa automática de estoque a partir de eventos de câmera</li>
+                <li><i class="bi bi-check2-circle"></i> Fornecedores, fichas técnicas e alertas de estoque baixo</li>
+                <li><i class="bi bi-check2-circle"></i> Revisão manual dos eventos detectados pela IA</li>
+                <li><i class="bi bi-check2-circle"></i> Agente RTSP com interface gráfica e instaladores nativos</li>
+                <li><i class="bi bi-check2-circle"></i> Multi-restaurante com autenticação JWT e papéis</li>
+                <li><i class="bi bi-check2-circle"></i> API e worker de câmeras publicados na Railway</li>
+              </ul>
             </div>
           </div>
 

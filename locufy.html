@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfólio - Guilherme Jeske</title>
-  <meta content="" name="description">
+  <title>Locufy - Portfólio Guilherme Jeske</title>
+  <meta content="O Locufy é um radialista virtual com inteligência artificial, vendido como SaaS para rádios e emissoras. A rádio configura a voz, o nome e a personalidade " name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -36,17 +36,18 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/perfil.jpg" alt="Foto de Guilherme Jeske" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Guilherme H Jeske</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/guilherme.jeske.1" class="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/jeskeguilherme/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/guilherme-jeske-1b54bb198/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/GuilhermeJeske1006" class="github" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="bx bxl-github"></i></a>
 
-        </div>
-      </div>
+        <div class="profile">
+            <img src="assets/img/perfil.jpg" alt="Foto de Guilherme Jeske" class="img-fluid rounded-circle">
+            <h1 class="text-light"><a href="index.html">Guilherme H Jeske</a></h1>
+            <div class="social-links mt-3 text-center">
+              <a href="https://www.facebook.com/guilherme.jeske.1" class="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/jeskeguilherme/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/guilherme-jeske-1b54bb198/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/GuilhermeJeske1006" class="github" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="bx bxl-github"></i></a>
+    
+            </div>
+          </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
@@ -68,7 +69,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>upload de imagem com php</h2>
+          <h2>Locufy</h2>
 
         </div>
 
@@ -85,12 +86,18 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
-                <div>
-                  <img src="assets/img/upload.png" alt="">
+                <div class="swiper-slide">
+                  <img src="assets/img/locufy.jpg" alt="Locufy - imagem 1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/locufy-painel.jpg" alt="Locufy - imagem 2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/locufy-grade.jpg" alt="Locufy - imagem 3">
                 </div>
 
-
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
 
@@ -98,15 +105,26 @@
             <div class="portfolio-info">
               <h3>Informações do projeto</h3>
               <ul>
-                <li><strong>Tecnologia</strong>: PHP</li>
-
+                <li><strong>Categoria</strong>: SaaS</li>
+                <li><strong>Tecnologia</strong>: Python, FastAPI, Claude (Anthropic), ElevenLabs (TTS), PostgreSQL, Redis, Stripe, Next.js 16, React 19, Tailwind, Docker Compose</li>
+                <li><strong>Data do projeto</strong>: 2026 - em andamento</li>
+                <li><strong>Link</strong>: <a href="https://locufybr.com" target="_blank" rel="noopener noreferrer">locufybr.com</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Descrição do projeto</h2>
-              <p>
-               Esse é um projeto bem simples feito em PHP puro que consiste em fazer o upload de uma imagem, guardar ela em uma pasta dentro dos arquivos e depois lista-la em outra pagina.
-              </p>
+              <p>O Locufy é um radialista virtual com inteligência artificial, vendido como SaaS para rádios e emissoras. A rádio configura a voz, o nome e a personalidade do locutor, e ele passa a gravar chamadas, vinhetas e aberturas de programa.</p>
+              <p>O locutor também atende os ouvintes pelo WhatsApp: responde recados e mensagens ajustando o tom (formal ou informal), sempre dentro de travas de segurança de conteúdo, horário e volume de mensagens.</p>
+              <h4>Principais funcionalidades</h4>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> Geração de locução com vozes do catálogo ou voz clonada (ElevenLabs)</li>
+                <li><i class="bi bi-check2-circle"></i> Respostas inteligentes aos ouvintes com Claude (Anthropic)</li>
+                <li><i class="bi bi-check2-circle"></i> Integração com WhatsApp via WuzAPI self-hosted</li>
+                <li><i class="bi bi-check2-circle"></i> Grade de programação e cadastro de patrocinadores</li>
+                <li><i class="bi bi-check2-circle"></i> Guardrails de conteúdo, horário e rate limit com Redis</li>
+                <li><i class="bi bi-check2-circle"></i> Assinaturas e cobrança recorrente com Stripe</li>
+                <li><i class="bi bi-check2-circle"></i> Painel de configuração em Next.js + React</li>
+              </ul>
             </div>
           </div>
 

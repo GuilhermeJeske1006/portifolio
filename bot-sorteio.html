@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfólio - Guilherme Jeske</title>
-  <meta content="" name="description">
+  <title>Bot de Sorteio via WhatsApp - Portfólio Guilherme Jeske</title>
+  <meta content="Bot desenvolvido para uma rádio organizar os sorteios feitos com os ouvintes pelo WhatsApp." name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -36,17 +36,18 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/perfil.jpg" alt="Foto de Guilherme Jeske" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Guilherme H Jeske</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/guilherme.jeske.1" class="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/jeskeguilherme/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/guilherme-jeske-1b54bb198/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/GuilhermeJeske1006" class="github" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="bx bxl-github"></i></a>
 
-        </div>
-      </div>
+        <div class="profile">
+            <img src="assets/img/perfil.jpg" alt="Foto de Guilherme Jeske" class="img-fluid rounded-circle">
+            <h1 class="text-light"><a href="index.html">Guilherme H Jeske</a></h1>
+            <div class="social-links mt-3 text-center">
+              <a href="https://www.facebook.com/guilherme.jeske.1" class="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/jeskeguilherme/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/guilherme-jeske-1b54bb198/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/GuilhermeJeske1006" class="github" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="bx bxl-github"></i></a>
+    
+            </div>
+          </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
@@ -68,7 +69,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>upload de imagem com php</h2>
+          <h2>Bot de Sorteio via WhatsApp</h2>
 
         </div>
 
@@ -85,10 +86,9 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
-                <div>
-                  <img src="assets/img/upload.png" alt="">
+                <div class="swiper-slide">
+                  <img src="assets/img/bot-sorteio.jpg" alt="Bot de Sorteio via WhatsApp - imagem 1">
                 </div>
-
 
               </div>
             </div>
@@ -98,15 +98,24 @@
             <div class="portfolio-info">
               <h3>Informações do projeto</h3>
               <ul>
-                <li><strong>Tecnologia</strong>: PHP</li>
-
+                <li><strong>Categoria</strong>: Automação</li>
+                <li><strong>Tecnologia</strong>: Node.js, Express, WuzAPI (WhatsApp), Claude (Anthropic), Google Sheets API</li>
+                <li><strong>Data do projeto</strong>: 2026</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Descrição do projeto</h2>
-              <p>
-               Esse é um projeto bem simples feito em PHP puro que consiste em fazer o upload de uma imagem, guardar ela em uma pasta dentro dos arquivos e depois lista-la em outra pagina.
-              </p>
+              <p>Bot desenvolvido para uma rádio organizar os sorteios feitos com os ouvintes pelo WhatsApp.</p>
+              <p>Durante a janela do sorteio (aos sábados, das 10h às 13h), o bot escuta as mensagens que chegam ao número da rádio e registra cada participante automaticamente em uma planilha do Google Sheets, sem responder nada ao ouvinte e sem trabalho manual da equipe.</p>
+              <h4>Principais funcionalidades</h4>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> Recebe as mensagens por webhook da WuzAPI</li>
+                <li><i class="bi bi-check2-circle"></i> Processa só as mensagens dentro da janela de horário configurada</li>
+                <li><i class="bi bi-check2-circle"></i> Impede que o mesmo telefone participe duas vezes no mesmo dia</li>
+                <li><i class="bi bi-check2-circle"></i> Reaproveita o nome de quem já participou de sorteios anteriores</li>
+                <li><i class="bi bi-check2-circle"></i> Extrai o nome do ouvinte do texto, com apoio do Claude e fallback para o nome do perfil</li>
+                <li><i class="bi bi-check2-circle"></i> Grava os participantes direto no Google Sheets</li>
+              </ul>
             </div>
           </div>
 
